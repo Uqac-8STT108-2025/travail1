@@ -1,30 +1,103 @@
 ---
-title: "travail0"
+title: "indiv"
 author: "GroupeB"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r libairies, include=FALSE}
+library(tidyverse)
+#library(knitr)
 ```
 
-## R Markdown
+### Exercice1 : Définition du vecteur "mois"
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r mois}
+#ici
 ```
 
-## Including Plots
+### Exercice2 : 
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r etude_medicale}
+#ici  
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+### Exercice3 : 
+
+Creez un vecteur appelé average.growth en divisant la circonference par l’age et imprimez-le sur la console.
+
+```{r Orange}
+#ici
+```
+
+### Exercice 4 
+
+```{r fonction_matrix}
+#obtenir l'aide sur la fonction "matrix"
+#?matrix
+
+```
+
+Aide de la fonction matrix : 
+
+Fonction qui permet de calculer l’écart-type d’un échantillon : 
+
+
+Fonction qui permet de calculer le coefficient d'applatissement. 
+
+
+### Exercice 5 
+
+Trouvez cinq commandes différentes qui permettent de créer un vecteur numérique de longueur 5 contenant les éléments 1.5, 1, 0.5, 0 et -0.5 dans cet ordre (les différentes commandes peuvent utiliser une même fonction, mais pas une même combinaison d’arguments de la fonction).
+
+```{r commandes}
+#premiere commande
+v1 = c(1.5, 1, 0.5, 0, -0.5)
+cat(" v1 = ", v1)
+#deuxieme commande
+w1=c(1.5) 
+w2=c(1, 0.5, 0, -0.5)
+v2=c(w1,w2)
+cat("\n v2 = ",v2)
+#troisieme commande
+v3 <- seq(1.5, -0.5, by = -0.5)
+cat(" \n v3 = ", v3)
+#quatrieme commande
+w1=c(1.5,1)
+w2=c(0.5,0)
+w3=c(-0.5)
+v4=c(w1,w2,w3)
+cat("\n v4 = ", v4)
+#cinquieme commande
+v5 <- seq(3, -1, by = -1) / 2
+cat("\n v5 = ", v5)
+
+```
+### Exercice 6 
+
+```{r calculs}
+#creation des vecteurs
+x=c(1,2,3,4)  
+y= c(3,2,1,0)
+produit_abs = prod(abs(x-4*y))
+print(produit_abs)
+
+somme_puis = sum((x+1)**y)
+print(somme_puis)
+
+somme_racine = sum(sqrt(sort(y)/x))
+print(somme_racine)
+```
+
+$$Produit = \prod_{i=0}^{4} |x_i - 4 \times y_i|$$
+$Produit$ = `r produit_abs`
+
+
+$$Somme_1 = \sum_{i=0}^4 (x_i + 1)^{yi}$$
+$Somme_1$ =  `r somme_puis`
+
+
+
+$$Somme_2 = \sum_{i=1}^n \sqrt{ \frac{y(i)}{x_i}  }$$
+$Somme_2$ = `r somme_racine`
+
