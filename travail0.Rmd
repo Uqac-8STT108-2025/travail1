@@ -13,37 +13,65 @@ library(tidyverse)
 ### Exercice1 : Définition du vecteur "mois"
 
 ```{r mois}
-#ici
+mois <- c(29, 63, 7, 23, 84, 10, 9)
+annees <- mois / 12
+print(annees)
 ```
 
 ### Exercice2 : 
 
 ```{r etude_medicale}
-#ici  
+Age <- c(50, 17, 39, 27, 90)
+Poids <- c(80, 75, 92, 105, 60)
+
+Exclusion <- (Poids > 90) | (Age < 18) | (Age > 60)
+print(Exclusion)
 ```
 
 ### Exercice3 : 
 
 Creez un vecteur appelé average.growth en divisant la circonference par l’age et imprimez-le sur la console.
 
-```{r Orange}
-#ici
+```{r}
+data("Orange")
+head(Orange)
 ```
+
+```{r}
+str(Orange)
+```
+
+
+
+
+```{r orange}
+data("Orange")
+average.growth <- Orange$circumference / Orange$age
+print(average.growth)
+```
+
 
 ### Exercice 4 
 
-```{r fonction_matrix}
-#obtenir l'aide sur la fonction "matrix"
-#?matrix
 
+Aide de la fonction matrix : ?matrix
+```{r fonction_matrix}
+?matrix
 ```
 
-Aide de la fonction matrix : 
 
-Fonction qui permet de calculer l’écart-type d’un échantillon : 
+Fonction qui permet de calculer l’écart-type d’un échantillon : sd()
 
+```{r}
+sd(c(1, 2, 3, 4, 5))
+```
 
-Fonction qui permet de calculer le coefficient d'applatissement. 
+Fonction qui permet de calculer le coefficient d'applatissement:kurtosis()
+
+```{r}
+library(moments)
+kurtosis(c(1, 2, 3, 4, 5))
+```
 
 
 ### Exercice 5 

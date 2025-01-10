@@ -11,7 +11,7 @@
 
 <meta name="author" content="GroupeB" />
 
-<meta name="date" content="2025-01-09" />
+<meta name="date" content="2025-01-10" />
 
 <title>indiv</title>
 
@@ -352,32 +352,77 @@ display: none;
 
 <h1 class="title toc-ignore">indiv</h1>
 <h4 class="author">GroupeB</h4>
-<h4 class="date">2025-01-09</h4>
+<h4 class="date">2025-01-10</h4>
 
 </div>
 
 
 <div id="exercice1-définition-du-vecteur-mois" class="section level3">
 <h3>Exercice1 : Définition du vecteur “mois”</h3>
-<pre class="r"><code>#ici</code></pre>
+<pre class="r"><code>mois &lt;- c(29, 63, 7, 23, 84, 10, 9)
+annees &lt;- mois / 12
+print(annees)</code></pre>
+<pre><code>## [1] 2.4166667 5.2500000 0.5833333 1.9166667 7.0000000 0.8333333 0.7500000</code></pre>
 </div>
 <div id="exercice2" class="section level3">
 <h3>Exercice2 :</h3>
-<pre class="r"><code>#ici  </code></pre>
+<pre class="r"><code>Age &lt;- c(50, 17, 39, 27, 90)
+Poids &lt;- c(80, 75, 92, 105, 60)
+
+Exclusion &lt;- (Poids &gt; 90) | (Age &lt; 18) | (Age &gt; 60)
+print(Exclusion)</code></pre>
+<pre><code>## [1] FALSE  TRUE  TRUE  TRUE  TRUE</code></pre>
 </div>
 <div id="exercice3" class="section level3">
 <h3>Exercice3 :</h3>
 <p>Creez un vecteur appelé average.growth en divisant la circonference
 par l’age et imprimez-le sur la console.</p>
-<pre class="r"><code>#ici</code></pre>
+<pre class="r"><code>data(&quot;Orange&quot;)
+head(Orange)</code></pre>
+<pre><code>##   Tree  age circumference
+## 1    1  118            30
+## 2    1  484            58
+## 3    1  664            87
+## 4    1 1004           115
+## 5    1 1231           120
+## 6    1 1372           142</code></pre>
+<pre class="r"><code>str(Orange)</code></pre>
+<pre><code>## Classes &#39;nfnGroupedData&#39;, &#39;nfGroupedData&#39;, &#39;groupedData&#39; and &#39;data.frame&#39;:   35 obs. of  3 variables:
+##  $ Tree         : Ord.factor w/ 5 levels &quot;3&quot;&lt;&quot;1&quot;&lt;&quot;5&quot;&lt;&quot;2&quot;&lt;..: 2 2 2 2 2 2 2 4 4 4 ...
+##  $ age          : num  118 484 664 1004 1231 ...
+##  $ circumference: num  30 58 87 115 120 142 145 33 69 111 ...
+##  - attr(*, &quot;formula&quot;)=Class &#39;formula&#39;  language circumference ~ age | Tree
+##   .. ..- attr(*, &quot;.Environment&quot;)=&lt;environment: R_EmptyEnv&gt; 
+##  - attr(*, &quot;labels&quot;)=List of 2
+##   ..$ x: chr &quot;Time since December 31, 1968&quot;
+##   ..$ y: chr &quot;Trunk circumference&quot;
+##  - attr(*, &quot;units&quot;)=List of 2
+##   ..$ x: chr &quot;(days)&quot;
+##   ..$ y: chr &quot;(mm)&quot;</code></pre>
+<pre class="r"><code>data(&quot;Orange&quot;)
+average.growth &lt;- Orange$circumference / Orange$age
+print(average.growth)</code></pre>
+<pre><code>##  [1] 0.25423729 0.11983471 0.13102410 0.11454183 0.09748172 0.10349854
+##  [7] 0.09165613 0.27966102 0.14256198 0.16716867 0.15537849 0.13972380
+## [13] 0.14795918 0.12831858 0.25423729 0.10537190 0.11295181 0.10756972
+## [19] 0.09341998 0.10131195 0.08849558 0.27118644 0.12809917 0.16867470
+## [25] 0.16633466 0.14541024 0.15233236 0.13527181 0.25423729 0.10123967
+## [31] 0.12198795 0.12450199 0.11535337 0.12682216 0.11188369</code></pre>
 </div>
 <div id="exercice-4" class="section level3">
 <h3>Exercice 4</h3>
-<pre class="r"><code>#obtenir l&#39;aide sur la fonction &quot;matrix&quot;
-#?matrix</code></pre>
-<p>Aide de la fonction matrix :</p>
-<p>Fonction qui permet de calculer l’écart-type d’un échantillon :</p>
-<p>Fonction qui permet de calculer le coefficient d’applatissement.</p>
+<p>Aide de la fonction matrix : ?matrix</p>
+<pre class="r"><code>?matrix</code></pre>
+<pre><code>## démarrage du serveur d&#39;aide httpd ... fini</code></pre>
+<p>Fonction qui permet de calculer l’écart-type d’un échantillon :
+sd()</p>
+<pre class="r"><code>sd(c(1, 2, 3, 4, 5))</code></pre>
+<pre><code>## [1] 1.581139</code></pre>
+<p>Fonction qui permet de calculer le coefficient
+d’applatissement:kurtosis()</p>
+<pre class="r"><code>library(moments)
+kurtosis(c(1, 2, 3, 4, 5))</code></pre>
+<pre><code>## [1] 1.7</code></pre>
 </div>
 <div id="exercice-5" class="section level3">
 <h3>Exercice 5</h3>
