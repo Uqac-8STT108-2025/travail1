@@ -32,10 +32,16 @@ print(Exclusion)
 
 Creez un vecteur appelé average.growth en divisant la circonference par l’age et imprimez-le sur la console.
 
+
+#Affichons les 6 premières lignes
+
 ```{r}
 data("Orange")
 head(Orange)
 ```
+
+
+#Vérification de  la structure
 
 ```{r}
 str(Orange)
@@ -111,7 +117,7 @@ produit_abs = prod(abs(x-4*y))
 print(produit_abs)
 
 somme_puis = sum((x+1)**y)
-print(somme_puis)
+print(somme_pusis)
 
 somme_racine = sum(sqrt(sort(y)/x))
 print(somme_racine)
