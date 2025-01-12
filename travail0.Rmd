@@ -13,21 +13,29 @@ library(tidyverse)
 ### Exercice1 : Définition du vecteur "mois"
 
 ```{r mois}
-#ici
+mois <- c(29, 63, 7, 23, 84, 10 ,9)
+annees = mois/12
+annees
 ```
 
-### Exercice2 : 
+### Exercice2 : Définition des criteres d’exclusion
 
 ```{r etude_medicale}
-#ici  
+age <- c (50, 17, 39, 27, 90)
+poids <-c (80, 75, 92, 105, 60)
+
+exclus <- age<18 | age>60 | poids>90
+exclus
+
 ```
 
-### Exercice3 : 
+### Exercice3 : Création du vecteur average.growth 
 
 Creez un vecteur appelé average.growth en divisant la circonference par l’age et imprimez-le sur la console.
 
 ```{r Orange}
-#ici
+df <- data("Orange")
+df
 ```
 
 ### Exercice 4 
@@ -35,6 +43,12 @@ Creez un vecteur appelé average.growth en divisant la circonference par l’age
 ```{r fonction_matrix}
 #obtenir l'aide sur la fonction "matrix"
 #?matrix
+help("matrix")
+
+#fonction qui calcul l'écart type d'un échantillon
+help(sd)
+sd(age) # calcul de l'écart type d'une échantillon d'age
+
 
 ```
 
