@@ -1,10 +1,12 @@
 ---
-title: "Travail1"
-author: "Wilson FOTSING   \n  
-Wilfried Armel N'GUESSAN   \n   
-Vamoussa DIABATE   \n  
-Laurent Fabrice NGWE"  
-date: "`r Sys.Date()`"
+title: "Travail1 \n "
+author: " 1. Wilson FOTSING   \n  
+
+ 2. Wilfried Armel N'GUESSAN   \n   
+ 3. Vamoussa DIABATE   \n  
+4.  Laurent Fabrice NGWE   \n
+5. Iantsa Marie-Anne RANDRIANARIVONY \n \n "  
+date: " **date** :`r Sys.Date()`"
 output: html_document
 ---
 
