@@ -1,6 +1,6 @@
 ---
 title: "travail1"
-author: " Wilson FOTSING ; Wilfried Armel N'GUESSAN ; Vamoussa DIABATE; Laurent Fabrice NGWE"
+author: " Wilson FOTSING ; Wilfried Armel N'GUESSAN ; Vamoussa DIABATE; Laurent Fabrice NGWE ; Iantsa Marie-Anne Randrianarivony"
 date: "`r Sys.Date()`"
 output: html_document
 ---
