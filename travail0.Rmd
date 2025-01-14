@@ -19,8 +19,8 @@ library(tidyverse)
 
 ```{r mois}
 mois <- c(29, 63, 7, 23, 84, 10 ,9)
-annees = mois/12
-print(annees)
+années = mois/12
+print(années)
 ```
 
 ### Exercice2 : Définition des criteres d’exclusion
@@ -37,7 +37,10 @@ print(Exclusion)
 
 Creez un vecteur appelé average.growth en divisant la circonference par l’age et imprimez-le sur la console.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ce57f76ce56e2931e12e2ad3129326cec52a5b34
 #Affichons les 6 premières lignes
 
 ```{r}
