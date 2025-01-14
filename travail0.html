@@ -11,7 +11,11 @@
 
 <meta name="author" content="GroupeB" />
 
+<<<<<<< HEAD
 <meta name="date" content="2025-01-10" />
+=======
+<meta name="date" content="2025-01-13" />
+>>>>>>> 710d5a2aef51496378ec2286787ffc8d32582c66
 
 <title>indiv</title>
 
@@ -352,13 +356,18 @@ display: none;
 
 <h1 class="title toc-ignore">indiv</h1>
 <h4 class="author">GroupeB</h4>
+<<<<<<< HEAD
 <h4 class="date">2025-01-10</h4>
+=======
+<h4 class="date">2025-01-13</h4>
+>>>>>>> 710d5a2aef51496378ec2286787ffc8d32582c66
 
 </div>
 
 
 <div id="exercice1-définition-du-vecteur-mois" class="section level3">
 <h3>Exercice1 : Définition du vecteur “mois”</h3>
+<<<<<<< HEAD
 <pre class="r"><code>mois &lt;- c(29, 63, 7, 23, 84, 10, 9)
 annees &lt;- mois / 12
 print(annees)</code></pre>
@@ -371,12 +380,27 @@ Poids &lt;- c(80, 75, 92, 105, 60)
 
 Exclusion &lt;- (Poids &gt; 90) | (Age &lt; 18) | (Age &gt; 60)
 print(Exclusion)</code></pre>
+=======
+<pre class="r"><code>mois &lt;- c(29, 63, 7, 23, 84, 10 ,9)
+annees = mois/12
+annees</code></pre>
+<pre><code>## [1] 2.4166667 5.2500000 0.5833333 1.9166667 7.0000000 0.8333333 0.7500000</code></pre>
+</div>
+<div id="exercice2-définition-des-criteres-dexclusion" class="section level3">
+<h3>Exercice2 : Définition des criteres d’exclusion</h3>
+<pre class="r"><code>age &lt;- c (50, 17, 39, 27, 90)
+poids &lt;-c (80, 75, 92, 105, 60)
+
+exclus &lt;- age&lt;18 | age&gt;60 | poids&gt;90
+exclus</code></pre>
+>>>>>>> 710d5a2aef51496378ec2286787ffc8d32582c66
 <pre><code>## [1] FALSE  TRUE  TRUE  TRUE  TRUE</code></pre>
 </div>
-<div id="exercice3" class="section level3">
-<h3>Exercice3 :</h3>
+<div id="exercice3-création-du-vecteur-average.growth" class="section level3">
+<h3>Exercice3 : Création du vecteur average.growth</h3>
 <p>Creez un vecteur appelé average.growth en divisant la circonference
 par l’age et imprimez-le sur la console.</p>
+<<<<<<< HEAD
 <p>#Affichons les 6 premières lignes</p>
 <pre class="r"><code>data(&quot;Orange&quot;)
 head(Orange)</code></pre>
@@ -425,6 +449,25 @@ d’applatissement:kurtosis()</p>
 <pre class="r"><code>library(moments)
 kurtosis(c(1, 2, 3, 4, 5))</code></pre>
 <pre><code>## [1] 1.7</code></pre>
+=======
+<pre class="r"><code>df &lt;- data(&quot;Orange&quot;)
+df</code></pre>
+<pre><code>## [1] &quot;Orange&quot;</code></pre>
+</div>
+<div id="exercice-4" class="section level3">
+<h3>Exercice 4</h3>
+<pre class="r"><code>#obtenir l&#39;aide sur la fonction &quot;matrix&quot;
+#?matrix
+help(&quot;matrix&quot;)</code></pre>
+<pre><code>## démarrage du serveur d&#39;aide httpd ... fini</code></pre>
+<pre class="r"><code>#fonction qui calcul l&#39;écart type d&#39;un échantillon
+help(sd)
+sd(age) # calcul de l&#39;écart type d&#39;une échantillon d&#39;age</code></pre>
+<pre><code>## [1] 28.2542</code></pre>
+<p>Aide de la fonction matrix :</p>
+<p>Fonction qui permet de calculer l’écart-type d’un échantillon :</p>
+<p>Fonction qui permet de calculer le coefficient d’applatissement.</p>
+>>>>>>> 710d5a2aef51496378ec2286787ffc8d32582c66
 </div>
 <div id="exercice-5" class="section level3">
 <h3>Exercice 5</h3>
